@@ -19,11 +19,28 @@
 </head>
 
 <body>
-    <h3>Testing Sharing Games On Whatsapp</h3>
+    <h3>Whatsapp sharing</h3>
+    <div class="result">
 
-    <a href="whatsapp://send?text=Your selected Matches are 1. Manchester United vs Chelsea, 2. Arsenal vs Man city, 3. Liverpool vs Chelsea. Visit https://confirmbets.com/ to see more games and tips" data-action="share/whatsapp/share" target="_blank">
-        Share to whatsapp
-    </a>
+    </div>
+
 </body>
+<script>
+    var message = "gfg<br>"
+    var output = '';
+
+    output += `<a href="whatsapp://send?text=You selected
+  Manchester United Vs Chelsea
+Manchester City Vs Arsenal
+*Liverpool Vs PSG*" data-action="share/whatsapp/share" target="_blank">
+                    Share to whatsapp
+                </a>`;
+
+
+
+    window.onload = function() {
+        document.querySelector('.result').innerHTML = output;
+    }
+</script>
 
 </html>
